@@ -3,6 +3,36 @@
 
 Complex::Complex(float initR, float initI): real(initR), imaginary(initI){}
 
+template <typename T>
+Complex Complex::operator+(const T right) const{
+	return Complex(
+		real + right,
+		0
+		);
+}
+template <typename T>
+Complex Complex::operator-(const T right) const{
+	return Complex(
+		real - right,
+		0
+		);
+}
+template <typename T>
+Complex Complex::operator*(const T right) const{
+	return Complex(
+		real * right, 
+		imaginary * right
+		);
+}
+template <typename T>
+Complex Complex::operator/(const T right) const{
+	//Calculate it once.
+	return Complex(
+		real /right,
+		imaginary / right
+		);
+}
+
 Complex Complex::operator+(const Complex &right) const{
 	return Complex(
 		real + right.real,
