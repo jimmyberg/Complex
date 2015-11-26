@@ -1,7 +1,9 @@
 Made by Jimmy van den Berg in The Netherlands
 1 October 2015
 
-c++ library for complex number calculations.
+C++ library for complex number calculations.
+
+This was a personal exersize, note that there is a standard library available.
 
 ## Example
 
